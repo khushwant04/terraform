@@ -1,4 +1,4 @@
-project_id    = "hexel-studio-admin"
+project_id    = "gcp-project-id"
 region        = "asia-south1"
 zone          = "asia-south1-a"
 vm_name       = "test-server"
