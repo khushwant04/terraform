@@ -1,0 +1,6 @@
+project_id    = "hexel-studio-admin"
+region        = "asia-south1"
+zone          = "asia-south1-a"
+vm_name       = "test-server"
+machine_type  = "e2-micro"
+boot_image    = "ubuntu-os-cloud/ubuntu-2204-lts"
