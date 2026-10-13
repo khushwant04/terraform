@@ -24,8 +24,10 @@ resource "google_compute_instance" "vm_instance" {
 
   metadata_startup_script = <<-EOT
     #!/bin/bash
-    apt update -y
-    apt install -y nginx
+    set -euo pipefail
+    export DEBIAN_FRONTEND=noninteractive
+    apt-get update -y
+    apt-get install -y nginx
   EOT
 
   tags = ["http-server"]

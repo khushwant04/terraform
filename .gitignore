@@ -1,0 +1,26 @@
+# Terraform working directory and plugins
+.terraform/
+
+# State files (may contain sensitive data; use a remote backend instead)
+*.tfstate
+*.tfstate.*
+
+# Plans, crash logs, CLI config
+*.tfplan
+crash.log
+crash.*.log
+.terraformrc
+terraform.rc
+
+# Local overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Per-environment variable files that may hold real project IDs or secrets.
+# terraform.tfvars is already tracked with placeholder values; keep secrets out of it.
+*.auto.tfvars
+secret.tfvars
+
+# Keep .terraform.lock.hcl committed so provider versions are reproducible.
